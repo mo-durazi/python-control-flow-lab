@@ -41,8 +41,10 @@ def check_letter():
     letter = input('Enter a letter: ').lower()
     if letter in ('a', 'e', 'i', 'o', 'u'):
         print(f'The letter {letter} is a vowel')
-    else:
+    elif letter.isalpha():
         print(f'The letter {letter} is a constant')
+    else:
+        print('The Character that you\'ve entered is not a letter')
 
     # Your control flow logic goes here
 
