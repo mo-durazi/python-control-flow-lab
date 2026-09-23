@@ -103,18 +103,18 @@ print('----------------------------------------------------------')
 
 def weather_advice():
     while True:
-        isCold = input('Is it cold outside? ').lower()
-        isRaining = input('Does it rain? ').lower()
-        if  isCold == 'yes' and isRaining == 'yes':
+        is_cold = input('Is it cold outside? ').lower()
+        is_raining = input('Does it rain? ').lower()
+        if  is_cold == 'yes' and is_raining == 'yes':
             print('Wear a waterproof coat')
             break
-        elif isCold == 'yes' and isRaining == 'no':
+        elif is_cold == 'yes' and is_raining == 'no':
             print('Wear a warm coat')
             break
-        elif isCold == 'no' and isRaining == 'yes':
+        elif is_cold == 'no' and is_raining == 'yes':
             print('Carry an umbrella')
             break
-        elif isCold == 'no' and isRaining == 'no':
+        elif is_cold == 'no' and is_raining == 'no':
             print('Wear light clothing')
             break
         else:
